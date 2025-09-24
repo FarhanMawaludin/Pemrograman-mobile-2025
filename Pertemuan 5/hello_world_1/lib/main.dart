@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -47,9 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:[
-
-            const Text('Saya Farhan, saya sedang belajar pemrograman mobile'),
+          children: [
+            Image.asset('images/polinema.jpg'),
+            // const Text('Saya Farhan, saya sedang belajar pemrograman mobile'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -61,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), 
+      ),
     );
   }
 }
